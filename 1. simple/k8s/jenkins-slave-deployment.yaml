@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: jenkins-slave
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: jenkins-slave
+    spec:
+      containers:
+      - name: jenkins-slave
+        image: jenkinsci/ssh-slave:latest
+        imagePullPolicy: Always

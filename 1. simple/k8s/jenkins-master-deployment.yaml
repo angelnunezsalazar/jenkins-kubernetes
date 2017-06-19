@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: jenkins-master
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: jenkins-master
+    spec:
+      containers:
+      - name: jenkins-master
+        image: gcr.io/angel-nunez/jenkins-master:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
