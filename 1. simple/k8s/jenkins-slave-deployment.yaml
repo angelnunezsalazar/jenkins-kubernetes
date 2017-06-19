@@ -13,3 +13,5 @@ spec:
       - name: jenkins-slave
         image: jenkinsci/ssh-slave:latest
         imagePullPolicy: Always
+        ports:
+        - containerPort: 22
