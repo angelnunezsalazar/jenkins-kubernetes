@@ -1,0 +1,7 @@
+cloudbees-folder:6.0.4
+credentials-binding:1.11
+pipeline-stage-view:2.6
+git:3.3.0
+ssh-slaves:1.17
+matrix-auth:1.5
+workflow-aggregator:2.5
